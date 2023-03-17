@@ -1,4 +1,4 @@
-# STARTING PROJECT
+## STARTING PROJECT
 ### 1. сreate a virtual environment
 *python -m venv venv*
 
@@ -22,6 +22,8 @@
 ### **also you can run tests if you needed by
 *python manage.py test menu.tests*
 
-# CHECK THIS OUT
+## CHECK THIS OUT
 *http://127.0.0.1:8000/api/categories/*
 
+## Filtering product objects is avaliable for 'food__is_vegan' and 'food__is_special' parameters.
+## For Example : http://127.0.0.1:8000/api/categories/?food__is_vegan=true&food__is_special=false
