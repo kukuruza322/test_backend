@@ -1,4 +1,4 @@
-from .models import Food, FoodCategory
+from .models import Food, FoodCategory, Topping
 from rest_framework import serializers
 
 
@@ -16,7 +16,7 @@ class FoodSerializer(serializers.ModelSerializer):
                   ]
 
 
-class CategorySerializer(serializers.ModelSerializer):
+class FilteredCategorySerializer(serializers.ModelSerializer):
     foods = FoodSerializer(many=True, read_only=True, source='filtered_menu_items')
 
     class Meta:

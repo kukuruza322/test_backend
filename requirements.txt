@@ -2,3 +2,4 @@ django==4.1.7
 djangorestframework
 django-filter
 django-environ
+environ
